@@ -30,8 +30,8 @@ driver = webdriver.Chrome(executable_path='/Users/aniket/Desktop/sele/chromedriv
 driver.implicitly_wait(30)
 driver.get('https://www.instagram.com/')
 sleep(2)
-driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input').send_keys('saveairrack9')  # username
-driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input').send_keys('mesohorny')  # password
+driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[1]/div/label/input').send_keys('your username here')  # username
+driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[2]/div/label/input').send_keys('your password here')  # password
 driver.find_element_by_xpath('/html/body/div[1]/section/main/article/div[2]/div[1]/div/form/div/div[3]/button/div').click()  # login_button
 driver.find_element_by_xpath('/html/body/div[1]/section/main/div/div/div/div/button').click()  # NOT NOW BUTTION
 driver.find_element_by_css_selector('button.aOOlW.HoLwm').click()
@@ -42,12 +42,12 @@ for name in names_list :
         if a==0 :
             driver.find_element_by_css_selector('div.pbgfb.Di7vw').click()  # search
             driver.find_element_by_css_selector('input.XTCLo.x3qfX.focus-visible').send_keys(name)  # input
-            driver.find_element_by_css_selector('div.z556c').click()  # click on ananya
+            driver.find_element_by_css_selector('div.z556c').click()  # click on name
             a = a + 1
         else:
             driver.find_element_by_css_selector('div.pbgfb.Di7vw').click()  # search
             driver.find_element_by_css_selector('input.XTCLo.x3qfX.focus-visible').send_keys(name)
-            driver.find_element_by_css_selector('div.z556c').click()  # click on ananya
+            driver.find_element_by_css_selector('div.z556c').click()  # click on name
         sleep(2)
         driver.find_element_by_css_selector('button._5f5mN.jIbKX._6VtSN.yZn4P').click()  # FOLLOW
         driver.find_element_by_css_selector('button.sqdOP.L3NKy._4pI4F._8A5w5').click()  # MESSAGE
