@@ -1,7 +1,7 @@
 # saveairrack
 instagram bots to save airrack
 
-1. The Main File is AI.py . This is the python file you want to execute.
+1. The Main File is AI.py . This is the python file you want to execute. It is named AI because I was using it for a different project ignore the name I don't know how to change it in github
 2. You might have to install certain import files otherwise it will give error
 
 
