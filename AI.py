@@ -12,11 +12,11 @@ with open ("quotes/quotes.txt") as quotes :
         stripped_quote = quote.strip()
         quotes_list.append(stripped_quote)
 
-dir_list = os.listdir("names-west/batches_copy/")
+dir_list = os.listdir("names-west/batches/")
 for txt in dir_list :
     if txt == '.DS_Store' :
         continue
-    with open ("names-west/batches_copy/"+txt, "r") as names :
+    with open ("names-west/batches/"+txt, "r") as names :
         for name in names :
             stripped_name = name.strip()
             names_list.append(stripped_name)
